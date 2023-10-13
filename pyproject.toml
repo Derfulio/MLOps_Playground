@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "mlops-playground"
+version = "0.1.0"
+description = ""
+authors = ["Derfulio <36664091+Derfulio@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "mlops_playground"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
