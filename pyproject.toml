@@ -1,10 +1,11 @@
 [tool.poetry]
 name = "mlops-playground"
-version = "0.1.0"
-description = ""
+version = "0.1.2"
+description = "Reformats files to stdout"
 authors = ["Derfulio <36664091+Derfulio@users.noreply.github.com>"]
 readme = "README.md"
 packages = [{include = "mlops_playground"}]
+exclude = ["mlops_playground/examples", "mlops_playground/tests"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -18,6 +19,8 @@ python-dateutil = "^2.8.2"
 pytz = "^2023.3.post1"
 six = "^1.16.0"
 
+[tool.poetry.scripts]
+jformat = 'mlops_playground.jformat_click:main'
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.2"
